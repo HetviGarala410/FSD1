@@ -1,0 +1,28 @@
+
+
+
+input[type="text"]:focus {
+    background-color: lightgreen;
+}
+
+input[type="password"]:hover, 
+input[type="tel"]:hover {
+    font-size: 120%;
+}
+
+input[type="reset"]:hover {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+input[type="submit"]:hover {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+label:active {
+    background-color: blue;
+    color: white;
+}

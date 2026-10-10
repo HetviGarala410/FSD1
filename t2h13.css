@@ -1,0 +1,16 @@
+
+p::first-line {
+    color: green;
+    font-style: italic;
+}
+
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+    background-color: grey;
+    color: white; 
+}
+
+ol {
+    color: green;
+    font-size: 30px;
+}

@@ -1,0 +1,20 @@
+/* i) Heading styles: normal font style and 120% font size */
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-size: 120%;
+}
+
+/* ii) Arial class for paragraphs: Arial font, bold style, and 3cm indentation */
+p.arial {
+    font-family: Arial, sans-serif;
+    font-weight: bold; /* 'bold' is set via font-weight in CSS */
+    font-style: normal;
+    text-indent: 3cm;   /* Controls spacing for paragraph initialization (indentation) */
+}
+
+/* iii) Body styling: Orange background with "nature.jpg" repeating horizontally only */
+body {
+    background-color: orange;
+    background-image: url('img4.png');
+    background-repeat: repeat-x; /* Repeats horizontally only */
+}
