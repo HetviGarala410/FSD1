@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes example
+    {
+        0%
+        {
+            background-color: red;
+            transform: translate(0px,0px) rotate(0deg) scale(1,1);
+            border-radius: 0%;
+            
+            
+        }
+        25%
+        {
+            background-color: yellow;
+            transform: translate(100px,0px) rotate(90deg) scale(2,2);
+            border-radius: 25%;
+        }
+        50%
+        {
+            background-color: green;
+            transform: translate(100px,100px) rotate(180deg) scale(3,3);
+            border-radius: 50%
+        }
+        75%
+        {
+            background-color: blue;
+            transform: translate(0px,100px) rotate(270) scale(2,2);
+            border-radius: 75%;
+        }
+        100%
+        {
+            background-color: purple;
+            transform: translate(0px,0px) rotate(360deg) scale(1,1);
+            border-radius: 100%;
+        }
+        
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>

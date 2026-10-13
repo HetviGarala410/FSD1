@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple CSS Transitions Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+    }
+
+    /* The target element */
+    .box {
+      width: 120px;
+      height: 120px;
+      background-color: #ff6b6b;
+      border-radius: 0%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+
+      /* Multiple transitions with different durations, timing functions, and delays */
+      transition: 
+        width 1s ease-in-out 0s,
+        height 1s ease-in-out 0s,
+        background-color 1.5s linear 0.2s,
+        border-radius 0.8s ease-in 0.1s,
+        transform 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.3s;
+    }
+
+    /* State when hovering over the div */
+    .box:hover {
+      width: 200px;
+      height: 200px;
+      background-color: #1e3799;
+      border-radius: 50%;
+      transform: rotate(900deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">Hover Me</div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      /* Starting styles */
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      border-radius: 0px;
+      
+      /* Smooth transitions (Property, Duration, Delay) */
+      transition: 
+        width 1s, 
+        height 1s, 
+        background-color 5s 0.5s, /* 2 seconds long, waits 0.5 seconds */
+        border-radius 6s, 
+        transform 2s;
+    }
+
+    /* Styles when you hover over the box */
+    .box:hover {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- Create a webpage with a square box that meets the following requirements:
+1. The box is 100px by 100px and initially blue.
+2. On hover, the box should:
+      a. Change its background color to green smoothly in 2 seconds.
+       b. Double its size using scaling.
+       c. Move 50px to the right.
+3. The animation should use ease-in-out timing function.
+Write the HTML and CSS code. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      
+      
+      transition: background-color 2s ease-in-out, transform 2s ease-in-out;
+    }
+
+    
+    div:hover {
+      background-color: green;            
+      transform: scale(2) translateX(50px); 
+    }
+  </style>
+</head>
+<body>
+
+  <div></div>
+
+</body>
+</html>
