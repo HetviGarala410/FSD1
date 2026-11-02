@@ -1,0 +1,37 @@
+<!-- Write down HTML & CSS code to increase the <div> element to be two 
+times of its original width and three times of its original height with transition 
+effect. -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            border-color: black;
+            transition-duration: 4s;
+            /* transition-property: all; */
+            background-color: aqua;
+        }
+        div:hover{
+            transform: scale(2,3);
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

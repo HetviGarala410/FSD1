@@ -1,0 +1,53 @@
+<!-- Write down HTML/CSS code that add some text to an image in the bottom 
+right corner and top left corner along with use of opacity property of image -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 450px;
+            height: 450px;
+            position: relative;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            opacity: 50%;
+        }
+        .c1{
+            position:absolute;
+            right: 27px;
+            bottom: 37px;
+            color: rgba(255, 0, 0, 0.744);
+        }
+        .c2{
+            position: absolute;
+            top: 37px;
+            left: 28px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="a.png">
+    <div class="c1">Bottom right</div>
+    <div class="c2">Top left</div>
+    </div>
+</body>
+</html>

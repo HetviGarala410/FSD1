@@ -1,0 +1,36 @@
+<!-- Create a CSS-based pie chart that meets the following requirements:
+ i)The chart should be displayed inside a square <div> of 200px × 200px 
+ ii)The gradient should represent the following data segments which start 
+from 20degree: Red: 0% – 40%, Blue: 40% – 70%, Green: 70% – 90%, 
+Yellow: 90% – 100%.
+ iii)The chart should have a thin black solid border (2px).  
+Add a heading above the chart — “CSS Pie Chart using Conic Gradient”. 
+Use appropriate selectors. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-image: conic-gradient(from 20deg,red 0%,red 40%,blue 40%,blue 70%,green 70%,green 90%,yellow 90%,yellow 100%);
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS pie chart using conic gradient</h1>
+    <div></div>
+</body>
+</html>

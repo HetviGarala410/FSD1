@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        table {
+            width: 50%;
+            border: 2px solid black;
+            
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .table1 {
+            background-color: blue;
+        }
+
+        .table2 {
+            background-color: green;
+        }
+
+        @media (orientation: portrait) {
+            .table1 {
+                background-color: green;
+            }
+
+            .table2 {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <table class="table1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <table class="table2">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

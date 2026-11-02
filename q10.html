@@ -1,0 +1,36 @@
+<!-- Design the use of the var() function to declare & access the variable globally, 
+inside the :root selector. -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Variables</title>
+
+    <style>
+        :root {
+            --main-color: blue;
+            --text-color: white;
+            --box-width: 300px;
+        }
+
+        div {
+            background-color: var(--main-color);
+            color: var(--text-color);
+            width: var(--box-width);
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello World</div>
+</body>
+</html>

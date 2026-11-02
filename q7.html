@@ -1,0 +1,36 @@
+<!-- Write  HTML/CSS code that the animation will last for 4 seconds, and it will 
+gradually change the background-color from "red" to "yellow". -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes demo  {
+                from{background-color: red;}
+                to{background-color: yellow;}
+            }
+
+        div{
+            width: 400px;
+            height: 400px;
+            border-style: solid;
+            border-color: black;
+            animation-name: demo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!-- Create a webpage with a bouncing box and animated text that meet the 
+following requirements:
+Box Animation:
+ i)Create a square box of 150px × 150px, with an orange background.
+ ii)The box should move up and down (bounce) continuously between 0px 
+and 100px vertically.
+ iii)The motion should take 2 seconds, repeat infinitely and use the ease-in
+out timing function.
+Text Animation:
+ i)Place a text element (e.g., <p>) below the box.
+ ii)The text should fade in from transparent to purple and scale up by 
+1.5times (1.5x).
+ iii)The effect runs once when the page loads, takes 3 seconds and use the 
+ease-in-out timing function -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(100px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes textdemo {
+    0% {
+        opacity: 0;
+        color: purple;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        color: purple;
+        transform: scale(1.5);
+    }
+}
+
+        div {
+            height: 150px;
+            width: 150px;
+            background-color: orange;
+
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        p {
+    display: inline-block;
+    font-size: 30px;
+
+    animation-name: textdemo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+    <p>Hello World!</p>
+
+</body>
+</html>

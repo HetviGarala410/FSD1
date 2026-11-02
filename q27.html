@@ -1,0 +1,58 @@
+<!-- Write HTML & CSS script to design one banner of advertisement using <p> 
+tag. That text of advertise should move continuously from left end to right 
+end, then return back from right to left end. Use red and huge fonts for text. 
+Advertise should begin after 1 second of loading page. -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes demo{
+            0%{
+                transform: translateX(0px);
+            }
+            5%{
+                transform: translateX(100vw);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+
+        /* @keyframes demo {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(100vw);
+            }
+        } */
+        p{
+            animation-name: demo;
+            font-size: xx-large;
+            color: red;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam soluta voluptates fuga nisi, tempore quam similique. Modi sint vero sed? Magni quibusdam vitae doloremque doloribus voluptatem quidem tenetur pariatur!</p>
+</body>
+</html>
